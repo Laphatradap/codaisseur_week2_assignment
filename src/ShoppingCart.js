@@ -23,7 +23,7 @@ class ShoppingCart {
 
     total() {
       const total = this.cart.reduce((acc, current) => {
-        const subTotal = current.pricePerUnit *current.quantity
+        const subTotal = current.pricePerUnit * current.quantity
         return acc + subTotal
       }, 0)
       return total
